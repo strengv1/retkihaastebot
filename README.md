@@ -23,11 +23,11 @@ I used PostgreSQL database, but any other might work as well.
 
 ## Data
 
-"@retkihaastebot"'s bot_token, and 2023 chat's ID:
-- TOKEN= "5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw"
-- CHAT FORWARD ID = "-1001956004884" 
+bot_token, and chat's ID:
+- TOKEN= "XXXXXXX:YYYYYYYYYYY"
+- CHAT FORWARD ID = "-NUMBER" 
 
-`docker run -d -e RASTIBOT_KEY="5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw" -e RASTIBOT_FORWARD_ID="-1001956004884" retkihaaste`
+`docker run -d -e RASTIBOT_KEY="XXXXXXXX:YYYYYYYYYY" -e RASTIBOT_FORWARD_ID="-NUMBER" retkihaaste`
 
 
 * `docker run --network=NETWORK" --name="postgres" -e POSTGRES_PASSWORD="password" postgres`
