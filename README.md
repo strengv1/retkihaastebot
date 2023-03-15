@@ -27,9 +27,9 @@ Some stuff should be changed from config/config.py
 
 
 TOKEN= "5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw"
-CHAT FORWARD ID= "-634617094"
+CHAT FORWARD ID= "-1001591027124"
 
-docker run -d -e RASTIBOT_KEY="5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw" -e RASTIBOT_FORWARD_ID="-634617094" retkitesti
+docker run -d -e RASTIBOT_KEY="5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw" -e RASTIBOT_FORWARD_ID="-1001591027124" retkitesti
 
 
 * docker run --network=NETWORK" --name="postgres" -e POSTGRES_PASSWORD="password" postgres
@@ -49,14 +49,14 @@ docker run -d -e RASTIBOT_KEY="5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw" -
 2. "docker network create NETWORK" 
 	- vastaa jollai random stringil
 		
-3. "docker build --tag="retkitesti"
+3. "docker build --tag="retkitesti ."
 	- Pitäis ilmestyy imageihin
 	- Muista olla siel projektin kansios
 	
 4. "docker run --name postgres --network=NETWORK -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres:alpine"
 	- Container pitäis syttyy vihreeks Docker desktopis
 	
-5. "docker run -d --network=NETWORK -e RASTIBOT_FORWARD_ID="-634617094" -e RASTIBOT_KEY="5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw" retkitesti"
+5. "docker run -d --network=NETWORK -e RASTIBOT_FORWARD_ID="-1001591027124" -e RASTIBOT_KEY="1532113577:AAEZpppBtNT4BoUux8LkdAVjSEesscTKJWQ" retkihaaste3.0"
 	-Aja itse botti
 
 Voila! botin pitäis vastailla

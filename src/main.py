@@ -20,7 +20,7 @@ def start(update, context):
 Submit a completion as an open message (english or finnish) with the format "/<guild> <free message>". Example:
 "/as I walked 5kilometers and lit a campfire. I deserve points for this."
 
-Please send some sort of proof for the submissions as either a photo or a video (not required for kilometers travelled). If you want, send some photos to the main group as well to show others what you've done! By sending at least one photo to the group, you'll be listed in a raffle and get a chance to win something amazing! https://t.me/joinchat/NLI5hlZ_0U8zNWJk
+Please send some sort of proof for the submissions as either a photo or a video (not required for kilometers travelled). If you want, send some photos to the main group as well to show others what you've done! By sending at least one photo to the group, you'll be listed in a raffle and get a chance to win something amazing! https://t.me/+MkgpqjM9Xc1iNjU8
 
 If you don't receive a confirmation message for the submission, make sure you typed the command correctly. If you have any problems with the bot, feel free to ask in the general chat linked above.
 
@@ -30,20 +30,26 @@ Commands
 /rules - Rules
 /as <message>- submit a points for AS
 /bio <message> - submit a points for Inkubio
+There is no command for pictures/videos, just send them as they are.
 """
     context.bot.send_message(chat_id=update.effective_chat.id, text=text)
 
 def challenges(update, context):
-    text = """Challenges:
-1. Make a campfire +1
-    - Enjoy it for 30 minutes +1
-2. Drink hot chocolate outside +1
-3. Cook food outside +2
-4. Sleep in a sleeping bag or a hammock +1
-    - Do this outside +5
-5. Build a fort +2
-6. Climb a tree +1
-7. For every kilometer travelled by foot +1
+    text = """Once-a-day challenges:
+1. Sleep outside (in the nature) +20p	
+2. Play outdoor games for over 30min +5p
+3. Swim in a lake or the sea +5p
+4. Prepare food outside +4p
+5. Take a picture of a wild animal +4p
+6. Climb a tree +3p
+7. Hang around a campfire for over 30min +3p
+8. Make a "käpylehmä" out of conifer cones +3p
+9. Drink a hot beverage outside +3p
+
+Distance based challenges:
+1. By foot: 1p/km
+2. Cross country skiing: 0.5p/km
+3. By bicycle: 0.25p/km 
 """
     context.bot.send_message(chat_id=update.effective_chat.id, text=text)
 
@@ -53,11 +59,11 @@ def rules(update, context):
 Each challenge is repeatable once a day for the duration of the competition, so you can do the same tasks every day and keep earning points.
 
 For example, if you walk 3 kilometers to a campsite, climb a tree, make a campfire and cook food on it (which takes over 30 minutes), and walk back, you'll earn your guild the following points:
-Campfire + 30 minutes on it (1+1)
-Cook food outside (+2)
-Climb a tree (+1)
+Campfire for 30 minutes (+3)
+Cook food outside (+4)
+Climb a tree (+3)
 Walk 6 kilometers (+6)
-Total +11 points.
+Total +16 points.
 """
     context.bot.send_message(chat_id=update.effective_chat.id, text=text)
 
