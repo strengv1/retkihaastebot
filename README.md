@@ -51,7 +51,7 @@ bot_token, and chat's ID:
 4. `docker run --name postgres --network=NETWORK -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres:alpine`
 	- Container pitäis syttyy vihreeks Docker desktopis
 	
-5. `docker run -d --network=NETWORK -e RASTIBOT_FORWARD_ID="-1001956004884" -e RASTIBOT_KEY="1532113577:AAEZpppBtNT4BoUux8LkdAVjSEesscTKJWQ" retkihaaste`
+5. `docker run -d --network=NETWORK -e RASTIBOT_FORWARD_ID="-NUMBER" -e RASTIBOT_KEY="XXXXXXXX:YYYYYYYYYY" retkihaaste`
 	- Aja itse botti
 
 Voila! botin pitäis vastailla
