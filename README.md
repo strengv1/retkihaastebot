@@ -1,6 +1,7 @@
 # rastikiertelybot
 
 Telegram bot that can be used to forward messages to a chat.
+NOTE: Only works for python-telegram-bot versions 13.17 and under.
 
 ## Build instructions
 
@@ -16,28 +17,24 @@ Some environment variables are required:
 | BOT_CONTACT_PERSON | Contact info for /help command, optional|
 
 For example, if you have a postgres docker container with name "postgres" in network "network": 
-docker run -d --network=NETWORK -e RASTIBOT_KEY="5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw" -e RASTIBOT_FORWARD_ID="-634617094" -e BOT_CONTACT_PERSON="Strengell" retkitesti
 
-
+docker run -d --network=NETWORK -e RASTIBOT_KEY="5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw" -e RASTIBOT_FORWARD_ID="-1001956004884" -e BOT_CONTACT_PERSON="Contact person" retkihaastebot
 
 I used PostgreSQL database, but any other might work as well.
 
 ## Data
 Some stuff should be changed from config/config.py
 
-
+"@retkihaastebot"'s bot_token, and 2023 chat's ID:
 TOKEN= "5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw"
-CHAT FORWARD ID= "-1001591027124"
+CHAT FORWARD ID = "-1001956004884" 
 
-docker run -d -e RASTIBOT_KEY="5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw" -e RASTIBOT_FORWARD_ID="-1001591027124" retkitesti
+docker run -d -e RASTIBOT_KEY="5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw" -e RASTIBOT_FORWARD_ID="-1001956004884" retkihaaste
 
 
 * docker run --network=NETWORK" --name="postgres" -e POSTGRES_PASSWORD="password" postgres
 	-Ajaa postgres-tietokannan salasanalla password ja nimellä postgres
 	- --rm poistaa tän sulkemisen jälkee
-
-
-
 
 
 ** Step by step windows powershellil: **
@@ -56,7 +53,7 @@ docker run -d -e RASTIBOT_KEY="5249229291:AAFvANUsM1hnBJZBHLOjiAR5YBauAcGJlWw" -
 4. "docker run --name postgres --network=NETWORK -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres:alpine"
 	- Container pitäis syttyy vihreeks Docker desktopis
 	
-5. "docker run -d --network=NETWORK -e RASTIBOT_FORWARD_ID="-1001591027124" -e RASTIBOT_KEY="1532113577:AAEZpppBtNT4BoUux8LkdAVjSEesscTKJWQ" retkihaaste3.0"
+5. "docker run -d --network=NETWORK -e RASTIBOT_FORWARD_ID="-1001956004884" -e RASTIBOT_KEY="1532113577:AAEZpppBtNT4BoUux8LkdAVjSEesscTKJWQ" retkihaaste"
 	-Aja itse botti
 
 Voila! botin pitäis vastailla
